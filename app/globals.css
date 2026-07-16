@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #0a0c10;
+  --color-ink-raised: #12151b;
+  --color-amber: #e8a968;
+  --color-cyan: #3fa9a0;
+  --color-body: #c9ccd1;
+  --color-hairline: #4a4e58;
+
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-hud: "Space Mono", "JetBrains Mono", ui-monospace, monospace;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-ink);
+  scroll-behavior: auto;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-body);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-amber);
+  color: var(--color-ink);
+}
+
+.font-display {
+  font-family: var(--font-display), serif;
+}
+
+.font-hud {
+  font-family: var(--font-hud), monospace;
+}
+
+.hud-label {
+  font-family: var(--font-hud), monospace;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--color-cyan);
+}
+
+.hairline {
+  border-color: var(--color-hairline);
+}
+
+a {
+  color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 3px;
+}
+
+canvas {
+  touch-action: none;
+}
