@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import MagneticLink from "./MagneticLink";
 
 export default function Footer() {
   return (
@@ -16,12 +17,12 @@ export default function Footer() {
         Next scene starts with a message.
       </motion.h2>
       <div className="flex flex-wrap items-center gap-x-10 gap-y-4 hud-label">
-        <a href="https://www.youtube.com/@sjframes" target="_blank" rel="noreferrer" className="transition-colors hover:text-[var(--color-amber)]">
+        <MagneticLink href="https://www.youtube.com/@sjframes">
           YOUTUBE — @SJFRAMES
-        </a>
-        <a href="https://www.instagram.com/sjframes" target="_blank" rel="noreferrer" className="transition-colors hover:text-[var(--color-amber)]">
+        </MagneticLink>
+        <MagneticLink href="https://www.instagram.com/sjframes">
           INSTAGRAM — @SJFRAMES
-        </a>
+        </MagneticLink>
       </div>
       <p className="mt-16 text-xs text-[var(--color-hairline)]">
         © {new Date().getFullYear()} Sanvi. Built frame by frame.

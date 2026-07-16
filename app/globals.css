@@ -30,6 +30,20 @@ body {
   overflow-x: hidden;
 }
 
+@media (pointer: fine) {
+  body,
+  a,
+  button {
+    cursor: none;
+  }
+}
+
+@media (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
+}
+
 ::selection {
   background: var(--color-amber);
   color: var(--color-ink);

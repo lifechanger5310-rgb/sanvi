@@ -14,8 +14,9 @@ export default function Manifesto() {
         className="font-display max-w-3xl text-3xl font-light leading-snug text-white md:text-5xl"
       >
         The calmer a scene sits, the more dangerous the fight underneath it
-        gets. Every frame Sanvi ships is built on that restraint — visuals
-        first, noise never.
+        gets. Every frame Sanvi ships is built on that tension — a world
+        that keeps moving under the surface, even when nothing on it seems
+        to move at all.
       </motion.p>
     </section>
   );
